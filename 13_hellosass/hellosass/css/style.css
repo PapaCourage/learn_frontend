@@ -1,0 +1,142 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital@1&display=swap");
+@font-face {
+  font-family: "CHILLER";
+  src: url("../fonts/CHILLER.eot");
+  src: local("☺"), url("../fonts/CHILLER.woff") format("woff"), url("../fonts/CHILLER.ttf") format("truetype"), url("../fonts/CHILLER.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  padding: 30px;
+}
+
+.text {
+  border: 5px solid #008B8B;
+  margin: 0 auto;
+  height: 1400px;
+  background-color: #F4A460;
+  width: 31.25%;
+  font-size: 30px;
+  line-height: 40px;
+  position: relative;
+}
+.text h1 {
+  color: #00FF00;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.text .main {
+  font-size: 40px;
+}
+.text .main span {
+  color: blue;
+}
+.text p {
+  text-align: center;
+  font-weight: 700px;
+}
+
+.link {
+  color: brown;
+  text-decoration: underline;
+  font-size: 30px;
+  position: absolute;
+  left: 870px;
+  bottom: 0px;
+}
+.link:hover {
+  color: blue;
+}
+
+.italic {
+  font-family: Fraunces;
+  background-color: #FF69B4;
+}
+
+.bold {
+  font-family: "Potta One";
+  background-color: #7B68EE;
+  position: relative;
+  left: 300px;
+}
+
+.wild {
+  font-family: "CHILLER";
+  background-color: #2F4F4F;
+}

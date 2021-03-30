@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital@1&display=swap');
+
+ @font-face {
+	font-family: 'CHILLER';
+	src: url('../fonts/CHILLER.eot');
+	src: local('☺'), url('../fonts/CHILLER.woff') format('woff'), url('../fonts/CHILLER.ttf') format('truetype'), url('../fonts/CHILLER.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+// Переменные для блока
+
+$fz:30px;
+$color1:#F4A460;
+
+body{
+	padding: 30px;
+}
+.text{
+	border: 5px solid #008B8B;
+	margin: 0 auto;
+	height: 1400px;
+	background-color: $color1;
+	width: 300px / 960px *100%;
+	font-size: $fz;
+	line-height: 40px;
+	h1{
+		color: #00FF00;
+		position: sticky;
+		top: 0;
+
+	}
+	.main{
+		font-size: 40px;
+		span{
+			color: blue;
+		}
+	}
+	p{
+		text-align: center;
+		font-weight: 700px;
+	}
+	position: relative;
+}
+.link{
+	color: brown;
+	text-decoration: underline;
+	font-size: $fz;
+	&:hover{
+		color: blue;
+	}
+	position: absolute;
+	left: 870px;
+	bottom: 0px;
+
+}
+.italic {
+	font-family: Fraunces;
+	background-color: #FF69B4;
+
+}
+.bold {
+	font-family: "Potta One";
+	background-color:#7B68EE;
+	position: relative;
+	left: 300px;
+
+}
+.wild {
+	font-family: 'CHILLER';
+	background-color:#2F4F4F;
+
+}

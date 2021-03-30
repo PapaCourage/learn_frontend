@@ -1,0 +1,176 @@
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+/*--------------------*/
+
+.wrap {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.dice {
+	padding: 20px;
+	width: 200px;
+	height: 200px;
+	border: solid 5px #000;
+	border-radius: 20px;
+	box-sizing: border-box;
+
+	display: inline-flex;
+	vertical-align: top;
+	margin: 5px;
+}
+
+.dice__point {
+	/*outline: solid 2px #aaa;*/
+}
+
+.dice__point::before {
+	content: "";
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-color: #000;
+	border-radius: 50%;
+}
+
+.dice_one {
+	justify-content: center;
+	align-items: center;
+}
+
+.dice_two {
+	justify-content: space-between;
+}
+
+.dice_two .dice__point:nth-child(1) {
+	align-self: flex-end;
+}
+
+.dice_three {
+	justify-content: space-between;
+}
+
+.dice_three .dice__point:nth-child(1) {
+	align-self: flex-end;
+}
+
+.dice_three .dice__point:nth-child(2) {
+	align-self: center;
+}
+
+.dice_four {
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.dice_four .dice__point {
+	width: 50%;
+}
+
+.dice_four .dice__point:nth-child(even) {
+	text-align: right;
+}
+
+.dice_five {
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.dice_five .dice__point:nth-child(3) {
+	width: 100%;
+	text-align: center;
+}
+
+.dice_six {
+	flex-flow: wrap column;
+	justify-content: space-between;
+	align-content: space-between;
+}
